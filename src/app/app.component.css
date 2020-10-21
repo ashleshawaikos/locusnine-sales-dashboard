@@ -1,0 +1,81 @@
+body{
+    background-color: #EFF3F6;
+    font-family: 'Roboto', sans-serif;
+}
+#dashboard{
+    margin: 0 80px ;
+}
+#dashboard #logo{
+    padding:26px 0;
+}
+
+#dashboard #title h3{
+    padding:33px 0;
+    font-size: 48px;
+    font-weight: 300;
+    color: #231f20;
+    margin-bottom: 0;
+}
+
+nav.navbar{
+    background: white;
+    padding: 0;
+    
+}
+
+nav.navbar button{
+    /* padding: 10px 15px; */
+    outline: 0;
+
+}
+
+nav.navbar span{
+    margin: 5px;
+    padding: 15px 15px;
+
+}
+
+a.nav-link{
+    color: #2c3e50;
+}
+.nav-link.active{
+    color: #2196f3;
+
+}
+
+.btn-group{
+    margin: 0;
+    border: none;
+}
+.btn{
+    /* margin: 0 auto; */
+    border: none;
+    outline: none ;
+    box-shadow: none;
+    text-transform: uppercase;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding: 15px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    opacity: 0.5;
+        border-radius: 0;
+
+}
+
+.btn:hover {
+    border-bottom: 2px solid  #2196f3ed;
+    box-shadow: none;
+    color:  #2196f3;
+
+}
+
+.btn.active {
+    box-shadow: none;
+    outline: none ;
+    border-bottom: 2px solid #2196f3;
+    color:  #2196f3;
+
+
+  }

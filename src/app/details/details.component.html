@@ -1,0 +1,38 @@
+<div id="dataDetailsArea">
+    <div>
+        <h2>Details</h2>
+    </div>
+    <div class="table-responsive">
+        <table class="table text-left">
+            <thead>
+                <tr>
+                    <th scope="col">Sales Rep</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Client</th>
+                    <th scope="col">Primary Contact Person</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Vertical</th>
+                    <th scope="col">Meeting Location</th>
+                    <th scope="col">Purpose of interaction</th>
+                    <th scope="col">Outcome and Remarks</th>
+                    <th scope="col">Engagement status</th>
+    
+                  </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let person of salesReps | daysOut : daysOut | salesRepFilter : selectedSalesRep" class="dealWon" [ngClass]="{'dealWon' : person.status==='Won','dealLost' : person.status==='Lost'}">
+                    <td>{{person.name}}</td>
+                    <td>{{person.date | date :"MMMM d, yyyy"}}</td>
+                    <td>{{person.client}}</td>
+                    <td>{{person.poc}}</td>
+                    <td>{{person.title}} Location</td>
+                    <td>{{person.vertical}}</td>
+                    <td>{{person.meet_loc}}</td>
+                    <td>{{person.purpose_interaction}}</td>
+                    <td>{{person.outcome}}</td>
+                    <td >{{person.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
